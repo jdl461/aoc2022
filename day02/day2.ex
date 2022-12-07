@@ -29,3 +29,19 @@ def score(x) do
 end
 
 Enum.map(guide, score) |> Enum.sum()
+
+# part 2
+def cheat(x) do
+  case x do
+    "A X" -> 3
+    "A Y" -> 4
+    "A Z" -> 8
+    "B X" -> 1
+    "B Y" -> 5
+    "B Z" -> 9
+    "C X" -> 2
+    "C Y" -> 6
+    "C Z" -> 7
+    _ -> 0
+  end
+end
