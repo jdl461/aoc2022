@@ -45,3 +45,5 @@ def cheat(x) do
     _ -> 0
   end
 end
+
+Enum.map(guide, cheat) |> Enum.sum()
